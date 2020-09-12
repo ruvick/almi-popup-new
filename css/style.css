@@ -125,7 +125,9 @@ body {
 }
 @media (max-width: 812px) {
  .popup__image {
- 	max-width: 200px; } }
+	 max-width: 200px; } 
+
+}
 
 .popup__title_text {
 	font-size: 47px;
@@ -207,8 +209,19 @@ textarea::-webkit-input-placeholder { color: #1A1818; }
  	min-width: 20px; } }
 
 @media (max-width: 414px) {
-.popup__color {
- 	width: 5px; } }
+	.popup__color {
+		width: 5px; 
+	}
+	
+	.popup__image{
+		display: none;
+	}
+
+	.popup__content-card {
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+}
 
 @media (max-width: 700px) {
 .block-card {
