@@ -121,6 +121,7 @@ body {
 	height: 565px;
 	height: auto;
 	border-radius: 23px;
+	background-color: white;
 }
 @media (max-width: 812px) {
  .popup__image {
