@@ -51,17 +51,13 @@ body {
 
 }
 
-/*.container {
-	width: 1170px;
+.container {
+	max-width: 1170px;
 	margin: 0 auto;
-}*/
+}
 
 .header {
 	padding: 100px 0 0 100px;
-}
-
-.btn-modals {
-
 }
 
 /*====================================================*/
@@ -187,15 +183,13 @@ textarea::-webkit-input-placeholder { color: #1A1818; }
 /*Popup-2*/
 .block-card {
 	display: flex;
+	flex-wrap: wrap;
 }
 
-@media (max-width: 350px) {
-.popup__content-two {
-	height: 935px; } }
-
-@media (max-width: 500px) {
-.popup__content-card-two {
- 	margin: 0; } }
+@media (max-width: 752px) {
+.block-card {
+	width: 400px;
+	margin: 0	auto; } }
 
 .popup__color {
 	max-width: 50px;
@@ -212,22 +206,19 @@ textarea::-webkit-input-placeholder { color: #1A1818; }
 	.popup__color {
 		width: 5px; 
 	}
-	
 	.popup__image{
 		display: none;
-	}
+	} }	
 
-	.popup__content-card {
-		margin-right: 10px;
-		margin-left: 10px;
-	}
-}
+@media (max-width: 600px) {
+.popup__content-card-two {
+	margin: 0 auto;
+ 	padding: 0 10px; } }
 
-@media (max-width: 700px) {
-.block-card {
- 	display: flex; 
- 	flex-wrap: wrap;
- 	justify-content: center; } }	
+@media (max-width: 350px) {
+.popup__content-two {
+	height: 935px; } }
+
 
 .popup__form_two input, textarea {
 	max-width: 330px;
@@ -242,8 +233,11 @@ textarea::-webkit-input-placeholder { color: #1A1818; }
 	margin-bottom: 73px;
 }
 
+@media (max-width: 752px) {
 .popup__form_two textarea {
-	margin-bottom: 73px;
+ 	margin-bottom: 40px; } }
+
+.popup__form_two textarea {
 	max-width: 330px;
 	width: 100%;
 }
@@ -256,29 +250,26 @@ textarea::-webkit-input-placeholder { color: #1A1818; }
 .popup__form_right {
  	margin-left: 30px; } }
 
-@media (max-width: 500px) {
-.popup__form_right {
- 	margin-left: 0px; } }
-
 .popup__assess {
-	margin-top: 115px;
+	display: flex;
+	flex-direction: column;
+	margin-top: 115px; 
 }
 
 @media (max-width: 812px) {
  .popup__assess {
  	padding: 0 10px; } } 
 
-@media (max-width: 700px) {
+@media (max-width: 752px) {
  .popup__assess {
- 	margin-top: 30px; 
- 	margin-bottom: 30px; } } 
-
+ 	margin-top: 0px; 
+ 	margin-bottom: 30px; 
+ 	} } 
 
 .popup__assess_title {
 	font-weight: 400;
 	font-size: 20px;
 }
-
 
 .popup__stars {
 	display: flex;
@@ -307,7 +298,6 @@ textarea::-webkit-input-placeholder { color: #1A1818; }
 	position: relative;
 }
 
-
 .popup__upload {
 	font-weight: 400;
 	display: block;
@@ -320,6 +310,15 @@ textarea::-webkit-input-placeholder { color: #1A1818; }
 	padding: 12px 20px;
 	margin-top: 30px;
 }
+
+.popup-2__btn {
+	margin-left: 50px;
+}
+
+@media (max-width: 752px) {
+.popup-2__btn {
+	margin: 10px auto;
+	 } }
 
 #myfile {
 	display: none;

@@ -70,11 +70,13 @@
         		<form class="popup__form popup__form_two" action="#" method="get" >
 							<input type="text" name="name" placeholder="Name">
 							<textarea placeholder="Question"></textarea>
-							<button class="popup__btn">Send message</button>
+							<!-- <button class="popup__btn">Send message</button> -->
 						</form>
         	</div>
         	<div class="popup__form_right">
 						<div class="popup__assess">
+
+							<div class="popup-block__assess">
 							<h3 class="popup__assess_title">Assessement</h3>
 							<div class="popup__stars">
 								<div class="popup__stars_rating"></div>
@@ -92,6 +94,8 @@
 								<div class="popup__stars_rating"></div>	
 								Brand Quality
 							</div>
+							</div>	
+							<div class="popup-block__form">
 								<form class="popup__input" action="#" method="get">
 									<div id="file-name" class="popup__upload"  placeholder="File.txt">File.txt</div>
 									<label id="mylabel"><input id="myfile" type="file" name="file" onchange="getFileName ();">Upload file</label>
@@ -100,9 +104,11 @@
 									<div id="file-names" class="popup__upload"  placeholder="File.txt">File.txt</div>
 									<label id="mylabel"><input id="myfiles" type="file" name="file" onchange="getFileName ();">Upload file</label>
 								</form>
+								</div>
+
 						</div>
 					</div>
-
+					<button class="popup__btn popup-2__btn">Send message</button>
 					</div>
 
     	</div>
